@@ -14,3 +14,5 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', 'Movies@index')->name('movies');
+
+Route::get('/details', 'Movies@details')->name('details');

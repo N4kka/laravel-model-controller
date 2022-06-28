@@ -13,4 +13,11 @@ class Movies extends Controller
 
         return view('movies', compact('movies'));
     }
+
+    public function details() {
+        $chosen_movie = Movie::where('author', 1)
+        ->get();
+
+        return view('details', compact('details'));
+    }
 }
