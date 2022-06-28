@@ -1,0 +1,43 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+ul {
+    list-style: none;
+}
+
+body {
+    background-color: darkslateblue;
+}
+
+.header-title {
+    text-align: center;
+    color: darkred;
+    background-color: pink;
+}
+
+.single-movie {
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+
+    li {
+        width: calc(100% / 5 - 35px);
+        margin: 15px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        background-color: lightgray;
+
+        h4 {
+            margin: 15px 0;
+        }
+
+        .date {
+            margin: 15px 0;
+        }
+    }
+}
